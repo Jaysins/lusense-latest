@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+
+# Build outputs
+dist/
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+venv/
+*.py[cod]
+
+# AI Models
+*.pt
+*.onnx
+# Production model used by the backend
+!ai/furniture-detection/models/furniture_v2_best.pt
+
+# AI training outputs
+runs/
+
+# AI datasets
+ai/furniture-detection/dataset/
+ai/furniture-detection/dataset-v2/
+
+.vscode/
+ai/furniture-detection/test-images/
+
+
+# YOLO generated files
+*.cache
