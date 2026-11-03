@@ -4,7 +4,15 @@ from ultralytics import YOLO
 
 BASE_DIR = Path(__file__).resolve().parents[3]
 
-MODEL_PATH = BASE_DIR / "runs" / "detect" / "models" / "furniture_yolov8_v2" / "weights" / "best.pt"
+# MODEL_PATH = BASE_DIR / "runs" / "detect" / "models" / "furniture_yolov8_v2" / "weights" / "best.pt"
+
+MODEL_PATH = (
+    BASE_DIR
+    / "ai"
+    / "furniture-detection"
+    / "models"
+    / "furniture_v2_best.pt"
+)
 if not MODEL_PATH.is_file():
     raise RuntimeError(f"Furniture model missing: {MODEL_PATH}")
 
