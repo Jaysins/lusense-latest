@@ -66,7 +66,7 @@ const Create = ({ trigger, open, onOpenChange, onSwitch }: Props) => {
         email: values.email.trim(),
         password: values.password,
         options: {
-          emailRedirectTo: `${window.location.origin}/feed`,
+          emailRedirectTo: `${window.location.origin}/`,
         },
       });
 
@@ -96,7 +96,7 @@ const Create = ({ trigger, open, onOpenChange, onSwitch }: Props) => {
       handler.reset();
       onOpenChange(false);
 
-      router.push("/feed");
+      router.push("/d");
       router.refresh();
     } catch (error) {
       console.error("Signup failed:", error);

@@ -79,7 +79,7 @@ const Login = ({ trigger, open, onOpenChange, onSwitch }: Props) => {
       handler.reset();
       onOpenChange(false);
 
-      router.push("/feed");
+      router.push("/");
       router.refresh();
     } catch (error) {
       console.error("Login failed:", error);

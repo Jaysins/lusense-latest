@@ -28,7 +28,7 @@ export default function Signup() {
         );
         return;
       }
-      router.push("/feed");
+      router.push("/");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Signup failed");
     } finally {

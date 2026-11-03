@@ -51,7 +51,7 @@ export function LoginForm() {
       const { error } = await supabase.auth.signInWithPassword(data);
       if (error) throw error;
 
-      router.push("/feed");
+      router.push("/");
       router.refresh(); 
     } catch (err: any) {
       setServerError(err?.message ?? "Something went wrong. Please try again.");
