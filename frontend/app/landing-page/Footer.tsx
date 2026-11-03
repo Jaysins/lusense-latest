@@ -14,20 +14,20 @@ const Footer = () => {
     {
       title: "Quick links",
       links: [
-        { name: "Explore", href: "/explore" },
-        { name: "Shop", href: "/shop" },
-        { name: "Users", href: "/users" },
-        { name: "Collections", href: "/collections" },
-        { name: "Shopping", href: "/shopping" },
-        { name: "Help Center", href: "/help" },
+        { name: "Explore", href: "#explore" },
+        { name: "Shop", href: "#shop" },
+        { name: "Users", href: "#users" },
+        { name: "Collections", href: "#collections" },
+        { name: "Shopping", href: "#shopping" },
+        { name: "Help Center", href: "#help" },
       ],
     },
     {
       title: "Policies",
       links: [
-        { name: "Terms of service", href: "/terms" },
-        { name: "Privacy policy", href: "/privacy" },
-        { name: "Non-user notice", href: "/notice" },
+        { name: "Terms of service", href: "#terms" },
+        { name: "Privacy policy", href: "#privacy" },
+        { name: "Non-user notice", href: "#notice" },
       ],
     },
   ];
