@@ -22,7 +22,14 @@ model = YOLO(MODEL_PATH)
 
 def analyze_image(image: Image.Image):
 
-    results = model(image)
+    # results = model(image)
+    results = model.predict(
+    source=image,
+    imgsz=416,
+    device="cpu",
+    half=False,
+    verbose=False,
+)
 
     detections = []
     counts = {}
